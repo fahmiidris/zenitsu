@@ -1,0 +1,14 @@
+{
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.rulers": [
+        {
+            "column": 168,
+            "color": "#3D4041"
+        }
+    ],
+    "editor.quickSuggestions": {
+        "strings": "on"
+    }
+}

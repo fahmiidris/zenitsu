@@ -1,0 +1,19 @@
+{
+    "name": "zenitsu",
+    "version": "0.0.1",
+    "type": "module",
+    "files": [
+        "dist",
+        "bunfig.toml"
+    ],
+    "scripts": {
+        "dev": "bun run --hot src/index.ts",
+        "build": "bun build ./src/index.ts --outdir ./dist --minify",
+        "format": "prettier \"**/*\" --write --ignore-unknown"
+    },
+    "devDependencies": {
+        "@types/bun": "1.2.20",
+        "prettier": "3.6.2",
+        "typescript": "5.9.2"
+    }
+}
