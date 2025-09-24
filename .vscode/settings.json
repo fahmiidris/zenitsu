@@ -4,7 +4,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.rulers": [
         {
-            "column": 168,
+            "column": 160,
             "color": "#3D4041"
         }
     ],
