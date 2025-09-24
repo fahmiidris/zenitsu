@@ -8,11 +8,16 @@
         "prettier": "3.6.2",
       },
     },
+    "packages/@zenitsu-tsconfig": {
+      "name": "@zenitsu/tsconfig",
+      "version": "0.0.0",
+    },
     "packages/zenitsu": {
       "name": "zenitsu",
       "version": "0.0.0",
       "devDependencies": {
         "@types/bun": "catalog:",
+        "@zenitsu/tsconfig": "workspace:*",
         "typescript": "catalog:",
       },
     },
@@ -75,6 +80,8 @@
     "@types/node": ["@types/node@24.5.2", "", { "dependencies": { "undici-types": "~7.12.0" } }, "sha512-FYxk1I7wPv3K2XBaoyH2cTnocQEu8AOZ60hPbsyukMPLv5/5qr7V1i8PLHdl6Zf87I+xZXFvPCXYjiTFq+YSDQ=="],
 
     "@types/react": ["@types/react@19.1.13", "", { "dependencies": { "csstype": "^3.0.2" } }, "sha512-hHkbU/eoO3EG5/MZkuFSKmYqPbSVk5byPFa3e7y/8TybHiLMACgI8seVYlicwk7H5K/rI2px9xrQp/C+AUDTiQ=="],
+
+    "@zenitsu/tsconfig": ["@zenitsu/tsconfig@workspace:packages/@zenitsu-tsconfig"],
 
     "ansi-colors": ["ansi-colors@4.1.3", "", {}, "sha512-/6w/C21Pm1A7aZitlI5Ni/2J6FFQN8i1Cvz3kHABAAbw93v/NlvKdVOqz7CCWz/3iv/JplRSEEZ83XION15ovw=="],
 
