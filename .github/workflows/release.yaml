@@ -1,11 +1,9 @@
 name: Release
 
 on:
-    workflow_run:
-        workflows:
-            - Build
-        types:
-            - completed
+    push:
+        branches:
+            - main
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
