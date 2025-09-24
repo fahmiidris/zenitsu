@@ -1,0 +1,17 @@
+name: Build
+
+on:
+    push:
+        branch::
+            - "**"
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: oven-sh/setup-bun@v2
+              with:
+                  bun-version: 1.2.20
+            - run: bun install --frozen-lockfile
+            - run: bun run check && bun run build

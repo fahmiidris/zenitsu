@@ -1,19 +1,28 @@
 {
-    "name": "zenitsu",
-    "version": "0.0.1",
+    "name": "@zenitsu/root",
+    "version": "0.0.0",
+    "private": true,
     "type": "module",
-    "files": [
-        "dist",
-        "bunfig.toml"
-    ],
     "scripts": {
-        "dev": "bun run --hot src/index.ts",
-        "build": "bun build ./src/index.ts --outdir ./dist --minify",
+        "check": "bun run --filter './packages/*' check",
+        "build": "bun run --filter './packages/*' build",
+        "changeset": "changeset",
+        "changeset:version": "changeset version",
+        "changeset:publish": "changeset publish",
         "format": "prettier \"**/*\" --write --ignore-unknown"
     },
     "devDependencies": {
-        "@types/bun": "1.2.20",
-        "prettier": "3.6.2",
-        "typescript": "5.9.2"
+        "@changesets/cli": "2.29.7",
+        "prettier": "3.6.2"
+    },
+    "packageManager": "bun@1.2.20",
+    "workspaces": {
+        "packages": [
+            "packages/*"
+        ],
+        "catalog": {
+            "@types/bun": "1.2.20",
+            "typescript": "5.9.2"
+        }
     }
 }

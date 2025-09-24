@@ -1,0 +1,23 @@
+{
+    "name": "zenitsu",
+    "description": "Web Framework for Thunder Breathing User.",
+    "version": "0.0.0",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fahmiidris/zenitsu.git",
+        "directory": "packages/zenitsu"
+    },
+    "bugs": "https://github.com/fahmiidris/zenitsu/issues",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "check": "tsc",
+        "build": "bun build ./src/index.ts --outdir ./dist --minify"
+    },
+    "devDependencies": {
+        "@types/bun": "catalog:",
+        "typescript": "catalog:"
+    }
+}
